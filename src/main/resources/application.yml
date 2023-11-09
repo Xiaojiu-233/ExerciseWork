@@ -1,0 +1,7 @@
+# 自定义配置参数
+snapshot:
+  path: D:\IdeaWorkBench\ExerciseTime\src\main\resources\snapshots\
+  web: http://localhost:8080/snapshots/get/
+read:
+  path: D:\IdeaWorkBench\ExerciseTime\src\main\resources
+

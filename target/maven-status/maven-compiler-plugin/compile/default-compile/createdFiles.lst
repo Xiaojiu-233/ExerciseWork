@@ -1,0 +1,5 @@
+com\example\demo\controller\CheckController.class
+com\example\demo\entity\StoreUrl.class
+com\example\demo\entity\ExposeMsg.class
+com\example\demo\util\Platform.class
+com\example\demo\ExerciseApplication.class
