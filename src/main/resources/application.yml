@@ -5,3 +5,15 @@ snapshot:
 read:
   path: D:\IdeaWorkBench\ExerciseTime\src\main\resources
 
+# 数据库配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/exercise_db?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+
+# mybatis配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

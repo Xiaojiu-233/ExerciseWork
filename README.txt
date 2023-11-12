@@ -3,13 +3,10 @@
 作业1结果为result.csv
 
 作业2：
-拉取链接和上传截图的核心代码都在CheckController里
-关于未截图的链接再次拉取，我使用了 循环拉取，跳过墓碑 的方法：
-拉取链接是以 记录索引取模 的方式循环拉取，拉取的记录对象StoreUrl用HashMap(取名tombMap)记录
-当截图提交的id中有tombMap记录的StoreUrl时，该id指向的StoreUrl的tomb值修改为true
-循环拉取链接时，当拉取到了tomb=true的StoreUrl对象时，跳过该对象拉取
-当拉取完所有表的记录却依然没有满足拉取链接数时，跳出循环
-这样就能保证没有提交截图的记录可以再次拉取，也能保证每次拉取时的记录各不相同
+本次作业使用的是mysql数据库
+数据库的链接、使用的数据库、用户名、密码 都可以通过application.yml进行修改
+数据库数据在项目的haman.sql文件中
+通过select+limit的语法 让每次链接拉取都取到不同的数据
 
 PS:
 上传截图的保存链接可以通过application.yml进行修改

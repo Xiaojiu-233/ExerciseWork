@@ -7,12 +7,17 @@ import java.util.List;
 public enum Platform {
     京东,淘宝,天猫;
 
-    public static HashSet<String> returnNames(){
+    //返回平台在数据Hash表中的位置，如果没找到返回-1
+    public static int returnPos(String platform){
         HashSet<String> names = new HashSet<>();
+        int index = -1;
         for(Platform p : Platform.values()){
-            names.add(p.name());
+            if(platform.equals(p.name())){
+                index = Platform.valueOf(platform).ordinal();
+                break;
+            }
         }
-        return names;
+        return index;
     }
 
 }
